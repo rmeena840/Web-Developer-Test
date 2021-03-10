@@ -1,0 +1,39 @@
+.CartToast {
+  &__container {
+    @include mq(large) {
+      width: rem(450px);
+    }
+
+    .Toastify__close-button {
+      position: absolute;
+      top: rem(10px);
+      right: rem(10px);
+      &--default {
+        color: var(--highlight-color);
+      }
+    }
+  }
+  &__toast {
+    padding: rem(15px) rem(35px) rem(15px) rem(25px);
+  }
+  &__body {
+    @include p-simple;
+    color: var(--text-color);
+  }
+  &__progress {
+    background: none;
+    background-color: var(--highlight-color);
+    height: 2px;
+  }
+  &__button {
+    background-color: var(--highlight-color);
+    color: var(--white);
+    font-size: 80%;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    margin-left: 1em;
+  }
+}
