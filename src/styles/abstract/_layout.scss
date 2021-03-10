@@ -1,0 +1,50 @@
+/* 
+====================
+Breakpoints
+====================
+*/
+
+$mq-breakpoints: (
+  small: 480px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1280px,
+  xxlarge: 1440px,
+  xxxlarge: 1800px,
+);
+
+@import "~sass-mq";
+
+/* 
+====================
+Layout dimensions
+====================
+*/
+
+@mixin container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(1280px);
+
+  padding-left: rem(15px);
+  padding-right: rem(15px);
+  @include mq(medium) {
+    padding-left: rem(25px);
+    padding-right: rem(25px);
+  }
+}
+
+@mixin small-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem(650px);
+
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  @include mq(medium) {
+    padding-left: rem(25px);
+    padding-right: rem(25px);
+  }
+}
