@@ -1,0 +1,23 @@
+/* 
+====================
+Typography
+====================
+*/
+
+$font-family: "Libre Franklin", sans-serif;
+
+@mixin heading-1 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-bottom: 0.3em;
+}
+@mixin heading-2 {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 0.2em;
+}
+
+@mixin p-simple {
+  font-size: 14px;
+  font-weight: 200;
+}

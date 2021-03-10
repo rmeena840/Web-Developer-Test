@@ -1,0 +1,55 @@
+/* 
+====================
+Basic styles
+====================
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --black: #{$black};
+  --white: #{$white};
+  --dark-gray: #{$dark-gray};
+  --light-gray: #{$light-gray};
+  --extra-light-gray: #{$extra-light-gray};
+  --text-color: #{$dark-gray};
+  --highlight-color: #{$blue};
+  --light-highlight-color: #{lighten($blue, 25)};
+  --dark-highlight-color: #{darken($blue, 25)};
+  --error-color: #{$red};
+}

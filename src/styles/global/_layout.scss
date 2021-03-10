@@ -1,0 +1,16 @@
+/* 
+====================
+Layout styles
+====================
+*/
+
+.container {
+  @include container;
+}
+.small-container {
+  @include small-container;
+}
+
+#home {
+  padding-top: rem(100px);
+}
