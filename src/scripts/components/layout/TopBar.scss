@@ -1,0 +1,35 @@
+// style for Header component
+
+.TopBar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--white);
+  padding-top: rem(10px);
+  padding-bottom: rem(10px);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+
+  @include mq(xlarge) {
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+  }
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    flex-grow: 1;
+  }
+  &__logo {
+    display: block;
+    width: 60px;
+    height: 19px;
+  }
+
+  &__menu {
+  }
+}
