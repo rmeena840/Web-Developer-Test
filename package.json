@@ -13,7 +13,7 @@
     "start_original": "grunt && node server.js",
     "test": "test"
   },
-  "repository": "git+https://github.com/Crazy-Alpaca/Web-Developer-Test.git",
+  "repository": "git+https://github.com/rmeena840/Web-Developer-Test.git",
   "keywords": [
     "webdev",
     "test"
@@ -21,9 +21,9 @@
   "author": "Various",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Crazy-Alpaca/Web-Developer-Test/issues"
+    "url": "https://github.com/rmeena840/Web-Developer-Test/issues"
   },
-  "homepage": "https://github.com/Crazy-Alpaca/Web-Developer-Test#readme",
+  "homepage": "https://github.com/rmeena840/Web-Developer-Test#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
