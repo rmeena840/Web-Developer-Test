@@ -1,0 +1,101 @@
+// Style for menu list
+
+.MenuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &.mobile {
+    background: var(--white);
+    position: fixed;
+    z-index: 3;
+    top: rem(8px);
+    right: rem(8px);
+    border-radius: 2px;
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
+    min-width: rem(110px);
+    padding-bottom: rem(10px);
+
+    animation: fade-up 0.3s ease-out;
+  }
+  &.desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    // @include mq(large) {
+    //   margin-right: rem(10px);
+    // }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0.35em 0.7em;
+    color: var(--black);
+    text-decoration: none;
+    font-size: rem(12px);
+
+    &.is-icon {
+      padding: 0.4em 1.2em;
+    }
+  }
+
+  &__link-label {
+    display: inline-block;
+    font-size: inherit;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    border-radius: 3px;
+  }
+
+  &__link-icon {
+    display: inline-block;
+    width: rem(40px);
+    height: rem(40px);
+    position: relative;
+
+    background-color: currentColor;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 50%;
+  }
+  &.mobile &__link-icon {
+    // width: rem(20px);
+    // height: rem(20px);
+    // mask-size: 80%;
+    // mask-position: left center;
+  }
+  &__link-icon-number {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    width: 1.8em;
+    height: 1.8em;
+    line-height: 1.8em;
+    border-radius: 50%;
+  }
+
+  // Hover effects
+
+  @media (hover: hover) {
+    // Labels
+    &__link-label {
+      transition: background-color 0.3s;
+    }
+    &__link:hover &__link-label {
+      background-color: var(--light-gray);
+    }
+    // Icons
+    &__link.is-icon &__link-icon {
+      transition: background-color 0.3s;
+    }
+    &__link.is-icon:hover &__link-icon {
+      background-color: var(--highlight-color);
+    }
+  }
+}

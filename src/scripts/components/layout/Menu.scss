@@ -1,0 +1,35 @@
+// Style for menu component
+
+.Menu {
+  &__toggle {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  &__toggle-label {
+    font-size: rem(12px);
+    text-transform: uppercase;
+  }
+  &__toggle-icon {
+    display: inline-block;
+    width: rem(40px);
+    height: rem(40px);
+    position: relative;
+    background-color: currentColor;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 50%;
+    mask-image: url("/static/images/hamburger.svg");
+  }
+
+  &__backdrop {
+    position: fixed;
+    @include overlay;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+
+    animation: fade-in 0.15s ease-out;
+  }
+}
