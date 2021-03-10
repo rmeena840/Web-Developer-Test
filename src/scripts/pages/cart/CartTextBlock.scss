@@ -1,0 +1,14 @@
+.CartTextBlock {
+  @include small-container;
+  &__heading {
+    @include heading-1;
+  }
+  &__body {
+    @include p-simple;
+  }
+
+  margin-bottom: rem(30px);
+  @include mq(xlarge) {
+    margin-bottom: rem(50px);
+  }
+}
