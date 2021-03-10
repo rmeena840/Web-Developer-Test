@@ -1,0 +1,11 @@
+/* 
+====================
+Global variables and mixins, 
+loaded globally by sass-resources-loader
+====================
+*/
+@import "./abstract/functions";
+@import "./abstract/mixins";
+@import "./abstract/colors";
+@import "./abstract/layout";
+@import "./abstract/typography";

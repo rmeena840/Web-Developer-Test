@@ -1,0 +1,32 @@
+.Cart {
+  margin-bottom: rem(100px);
+
+  &__main {
+    padding-top: rem(100px);
+    @include mq(medium) {
+      padding-top: rem(150px);
+    }
+
+    @include mq(xlarge) {
+      padding-top: rem(180px);
+    }
+  }
+
+  &__submit {
+    @include small-container;
+    text-align: right;
+
+    margin-bottom: rem(30px);
+  }
+
+  .is-submitting {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .Button {
+    @include mq(medium) {
+      margin-right: rem(60px);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.CartMessage {
+  @include small-container;
+
+  &__panel {
+    border: 1px solid var(--light-highlight-color);
+    border-radius: 3px;
+    padding: rem(15px);
+    @include mq(medium) {
+      padding: rem(20px);
+      display: flex;
+    }
+  }
+
+  &__heading {
+    @include heading-2;
+    color: var(--highlight-color);
+  }
+
+  &__message {
+    @include p-simple;
+    margin-bottom: 0;
+    color: var(--highlight-color);
+  }
+
+  &__action {
+    padding-top: rem(10px);
+    @include mq(medium) {
+      padding-top: rem(0);
+      padding-left: rem(20px);
+    }
+  }
+
+  margin-bottom: rem(30px);
+  @include mq(xlarge) {
+    margin-bottom: rem(50px);
+  }
+
+  animation: fade-up 0.3s ease-out;
+}
