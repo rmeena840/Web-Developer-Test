@@ -1,0 +1,21 @@
+// style for Icon Button
+
+.IconButton {
+  display: inline-block;
+  vertical-align: middle;
+  width: rem(40px);
+  height: rem(40px);
+  background-color: var(--highlight-color);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 50%;
+  &.is-delete {
+    mask-image: url("/static/images/bin.svg");
+  }
+  @media (hover: hover) {
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: var(--dark-highlight-color);
+    }
+  }
+}
