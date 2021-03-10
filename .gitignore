@@ -60,3 +60,5 @@ typings/
 # Output directory
 /public
 
+.DS_Store
+package-lock.json
