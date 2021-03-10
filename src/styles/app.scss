@@ -1,5 +1,13 @@
-// Styles start here
+/* 
+====================
+Global styles
+====================
+*/
 
-body {
-    background: #FFF;
-}
+@import "react-toastify/dist/ReactToastify.css";
+
+@import "./abstract";
+@import "./global/base";
+@import "./global/layout";
+@import "./global/typography";
+@import "./global/animation";
