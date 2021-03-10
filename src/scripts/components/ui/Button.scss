@@ -1,0 +1,50 @@
+// style for Buy Now button
+.Button {
+  background-color: var(--highlight-color);
+  color: var(--white);
+  font-size: rem(12px);
+  text-transform: uppercase;
+  padding: 0.8em 1.3em;
+  border-radius: 3px;
+
+  &__label {
+    position: relative;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &__spinner {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid currentColor;
+    border-top-color: var(--highlight-color);
+    border-radius: 50%;
+    animation: fade-in 0.3s ease-out, rotation-360 0.6s linear infinite;
+  }
+
+  @media (hover: hover) {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      transition: transform 0.3s;
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      @include overlay;
+      background-color: var(--dark-highlight-color);
+      transform: scaleY(0);
+      transform-origin: center top;
+    }
+    &:not([disabled]):hover:before {
+      transform: scaleY(1);
+      transform-origin: center bottom;
+    }
+  }
+}
