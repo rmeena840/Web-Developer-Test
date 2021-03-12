@@ -1,7 +1,3 @@
-# My Application
-
-Live on Netlify: //TODO will be added
-
 ## Get Started
 
 Install: `npm i`
