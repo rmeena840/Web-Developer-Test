@@ -1,10 +1,8 @@
-// Header component
-
 import React from "react";
 import "./TopBar.scss";
+
 import Menu from "./Menu";
 
-// Menu items list
 const menuItems = [
   {
     label: "Products",

@@ -122,7 +122,7 @@ function CartTableRow(props) {
             {item.name}&nbsp;
             {item.size && <>&nbsp;{size(item.size)}</>}
             <span className="CartTable__out-of-stock-msg">
-              Out of stock
+            Out of stock
             </span>
           </span>
         ) : (

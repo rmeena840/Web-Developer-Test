@@ -1,5 +1,3 @@
-// Mounting the child component on cart page
-
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 

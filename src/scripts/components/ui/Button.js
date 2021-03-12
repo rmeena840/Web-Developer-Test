@@ -1,5 +1,5 @@
-// Buy Now button component
 import React from "react";
+
 import "./Button.scss";
 
 function Button(props) {

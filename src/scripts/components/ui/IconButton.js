@@ -1,6 +1,5 @@
-// Icon Button component
-
 import React from "react";
+
 import "./IconButton.scss";
 
 function IconButton(props) {

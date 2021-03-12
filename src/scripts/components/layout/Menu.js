@@ -1,5 +1,3 @@
-// Menu component
-
 import React, { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 

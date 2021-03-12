@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
+
 import "./Cart.scss";
+
 import TopBar from "./../../components/layout/TopBar";
+
 import Button from "./../../components/ui/Button";
 import IconButton from "./../../components/ui/IconButton";
+
 import CartTextBlock from "./CartTextBlock";
 import CartTable from "./CartTable";
 import CartMessage from "./CartMessage";
 import CartToast, { notify } from "./CartToast";
+
 import CartReducer from "./state/CartReducer";
 import CartContext from "./state/CartContext";
 

@@ -1,5 +1,3 @@
-// Menu list with hperlinks
-
 import React, { Fragment, useContext } from "react";
 import "./MenuList.scss";
 
